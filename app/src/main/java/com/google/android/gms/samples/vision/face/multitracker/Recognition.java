@@ -258,24 +258,107 @@ public class Recognition {
                 float distfA = (fAx*fAx)+(fAy*fAy);
                 float distgA = (gAx*gAx)+(gAy*gAy);
                 float disthA = (hAx*hAx)+(hAy*hAy);
-                float distiA = (iBx*iBx)+(iBy*iBy);
-                float distjA = (jBx*jBx)+(jBy*jBy);
+                float distiA = (iAx*iAx)+(iAy*iAy);
+                float distjA = (jAx*jAx)+(jAy*jAy);
                 float disteB = (eBx*eBx)+(eBy*eBy);
-                float distfB = (fCx*fCx)+(fCy*fCy);
-                float distgB = (gCx*gCx)+(gCy*gCy);
-                float disthB = (hCx*hCx)+(hCy*hCy);
-                float distiB = (iCx*iCx)+(iCy*iCy);
-                float 
+                float distfB = (fBx*fBx)+(fBy*fBy);
+                float distgB = (gBx*gBx)+(gBy*gBy);
+                float disthB = (hBx*hBx)+(hBy*hBy);
+                float distiB = (iBx*iBx)+(iBy*iBy);
+                float distjB = (jBx*jBx)+(jBy*jBy);
+                float disteC = (eCx*eCx)+(eCy*eCy);
+                float distfC = (fCx*fCx)+(fCy*fCy);
+                float distgC = (gCx*gCx)+(gCy*gCy);
 
 
 
             }
+            if (eulerY <= -12 && eulerY >= 12){
+                mFace.getPosition();
+                mFace.getLandmarks();
+                float x0 = 0, x2 = 0, x10 = 0;
+                float y0 = 0, y2 = 0, y10 = 0;
+
+                if (type == 0){
+                    x0 = landmark.getPosition().x;
+                    y0 = landmark.getPosition().y;
+
+                }
+
+                if (type == 1){
+                    x1 = landmark.getPosition().x;
+                    y1 = landmark.getPosition().y;
+                }
+                if (type == 2){
+                    x2 = landmark.getPosition().x;
+                    y2 = landmark.getPosition().y;
+                }
+                if (type == 4){
+                    x4 = landmark.getPosition().x;
+                    y4 = landmark.getPosition().y;
+                }
+
+                if (type == 5){
+                    x5 = landmark.getPosition().x;
+                    y5 = landmark.getPosition().y;
+                }
+
+                if (type == 6){
+                    x6 = landmark.getPosition().x;
+                    y6 = landmark.getPosition().y;
+
+
+                }
+                if (type == 10){
+                    x10 = landmark.getPosition().x;
+                    y10 = landmark.getPosition().y;
+                }
+                //float dist = ((x1-x3)*(x1-x3))+((y1-y3)*(y1-y3));
+
+                float eAx = x0 - x1; float eAy = y0 - y1;
+                float fAx = x0 - x2; float fAy = y0 - y2;
+                float gAx = x0 - x4; float gAy = y0 - y4;
+                float hAx = x0 - x5; float hAy = y0 - y5;
+                float iAx = x0 - x6; float iAy = y0 - y6;
+                float jAx = x0 - x10; float jAy = y0 - y10;
+                float eBx = x1 - x2; float eBy = y1 - y2;
+                float fBx = x1 - x4; float fBy = y1 - y4;
+                float gBx = x1 - x5; float gBy = y1 - y5;
+                float hBx = x1 - x6; float hBy = y1 - y6;
+                float iBx = x1 - x10; float iBy = y1 - y10;
+                float jBx = x6 - x10; float jBy = y6 - y10;
+                float eCx = x2 - x4; float eCy = y2 - y4;
+                float fCx = x2 - x5; float fCy = y2 - y5;
+                float gCx = x2 - x6; float gCy = y2 - y6;
+                float hCx = x2 - x10; float hCy = y2 - y10;
+                float iCx = x5 - x6; float iCy = y5 - y6;
+                float jCx = x5 - x10; float jCy = y5 - y10;
+                float eDx = x4 - x5; float eDy = y4 -y5;
+                float fDx = x4 - x6; float fDy = y4 - y6;
+                float gDx = x4 - x10; float gDy = y4 - y10;
+
+                float disteA = (eAx*eAx)+(eAy*eAy);
+                //  canvas.drawLine(x1,y1,x3,y3,mLandmarkPaint);
+                float distfA = (fAx*fAx)+(fAy*fAy);
+                float distgA = (gAx*gAx)+(gAy*gAy);
+                float disthA = (hAx*hAx)+(hAy*hAy);
+                float distiA = (iAx*iAx)+(iAy*iAy);
+                float distjA = (jAx*jAx)+(jAy*jAy);
+                float disteB = (eBx*eBx)+(eBy*eBy);
+                float distfB = (fBx*fBx)+(fBy*fBy);
+                float distgB = (gBx*gBx)+(gBy*gBy);
+                float disthB = (hBx*hBx)+(hBy*hBy);
+                float distiB = (iBx*iBx)+(iBy*iBy);
+                float distjB = (jBx*jBx)+(jBy*jBy);
+                float disteC = (eCx*eCx)+(eCy*eCy);
+                float distfC = (fCx*fCx)+(fCy*fCy);
+                float distgC = (gCx*gCx)+(gCy*gCy);
 
             // dx = x1 - x2;
            // dy = y1 - y2;
 
            // dist = sqrt (dx*dx + dy*dy);
 
-        }return null;
-    }
-}
+        }
+    }return null;
+}}
