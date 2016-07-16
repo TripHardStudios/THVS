@@ -354,7 +354,7 @@ public class Recognition {
 
             // dx = x1 - x2;
            // dy = y1 - y2;
-            //
+            
            // dist = sqrt (dx*dx + dy*dy);
 
         }
