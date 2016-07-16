@@ -9,9 +9,7 @@ import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 import com.google.android.gms.vision.face.Landmark;
 
-/**
- * Created by root on 7/5/16.
- */
+
 public class Recognition {
     volatile Face mFace ;
     Landmark landmark;
@@ -356,7 +354,7 @@ public class Recognition {
 
             // dx = x1 - x2;
            // dy = y1 - y2;
-
+            //
            // dist = sqrt (dx*dx + dy*dy);
 
         }
