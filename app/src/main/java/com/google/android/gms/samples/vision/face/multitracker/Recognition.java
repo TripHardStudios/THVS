@@ -347,10 +347,10 @@ public class Recognition {
                 float distgB = (gBx*gBx)+(gBy*gBy);
                 float disthB = (hBx*hBx)+(hBy*hBy);
                 float distiB = (iBx*iBx)+(iBy*iBy);
-                float distjB = (jBx*jBx)+(jBy*jBy);
-                float disteC = (eCx*eCx)+(eCy*eCy);
-                float distfC = (fCx*fCx)+(fCy*fCy);
-                float distgC = (gCx*gCx)+(gCy*gCy);
+               // float distjB = (jBx*jBx)+(jBy*jBy);
+               // float disteC = (eCx*eCx)+(eCy*eCy);
+               // float distfC = (fCx*fCx)+(fCy*fCy);
+               // float distgC = (gCx*gCx)+(gCy*gCy);
 
             // dx = x1 - x2;
            // dy = y1 - y2;
